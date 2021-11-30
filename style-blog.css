@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Janson;
+    src: url("JansonTextLTStd-Roman.otf") format("opentype");
+}
+@font-face {
+  font-family: JansonIta;
+  src:  url("JansonTextLTStd-Italic.otf") format("opentype");
+}
+
+.ctn {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+}
+p {
+  display: inline-block;
+}
+* {
+  padding: 0;
+  margin:0;
+  font-family: Janson;
+  overflow: hidden;
+
+}
+.bar {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  font-size: 14vh;
+  border-bottom:solid black 2px;
+
+}
+ a {
+   position: relative;
+   display: inline-block;
+/* opacity: 0; */
+margin-left: 30px;
+/* margin-top: 10%; */
+padding-top: 2vh;
+  /* transform: translate(0,1vh)!important ; */
+}
+a:hover {
+  font-family: JansonIta;
+  cursor: pointer;
+}
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: black;
+  padding-right: 10vw;
+}
+
+.bar:hover a {
+opacity: 1
+}
+.bar:hover {
+  background-color: white;
+/* background: linear-gradient(#EEffFF, #FFFFFF); */
+}
+canvas {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+}
+.cc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: .01;
+  background-color: black;
+  z-index: 20;
+  pointer-events: none;
+
+}
+
+.ccL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background-color: black;
+  /* background-color: rgb(135,184,241); */
+  z-index: 20;
+  pointer-events: none;
+  mix-blend-mode: screen;
+
+}
+
+.soon, .soon:hover {
+  color: #aaa;
+  pointer-events: none;
+}
